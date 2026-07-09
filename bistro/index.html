@@ -1,63 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Black Goose Bistro Gallery</title>
+<meta charset="utf-8">
+<title>Black Goose Bistro</title>
 <style>
-body {
-  background-color: #faf2e4;
-  margin: 0 10%;
-  font-family: sans-serif;
-  }
-h1 {
-  text-align: center;
-  font-family: serif;
-  font-weight: normal;
-  text-transform: uppercase;
-  border-bottom: 1px solid #57b1dc;
-  margin-top: 30px;
-}
-h2 {
-  color: #d1633c;
-  font-size: 1em;
-}
-
-/* 新增 Footer 样式 */
-.footer {
-  margin-top: 50px;
-  padding: 20px 0;
-  text-align: center;
-  border-top: 1px solid #57b1dc;
-}
-.footer-text a {
-  color: #d1633c;
-  text-decoration: none;
-  font-weight: bold;
-}
-.footer-text a:hover {
-  text-decoration: underline;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+ 
+    body {
+        font-family: 'Segoe UI', system-ui, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        min-height: 100vh;
+        padding: 40px 20px;
+    }
+ 
+    .main {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .header {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo {
+        width: 180px;
+        height: 180px;
+        flex-shrink: 0;
+    }
+    .title {
+        font-size: 3.2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    .content {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    h2 {
+        font-size: 1.8rem;
+        margin: 35px 0 12px 0;
+        color: white;
+    }
+    p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 8px;
+        opacity: 0.95;
+    }
+    .links {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .links a {
+        color: #fff7b3;
+        font-size: 1.35rem;
+        text-decoration: underline;
+        font-weight: 500;
+    }
+    .links a:hover {
+        opacity: 0.8;
+    }
 </style>
 </head>
 <body>
-<h1>Blackstone Bistro Gallery</h1>
-<p>Not is our food good, it's also good-looking! Our patrons often stop to admire our fare with a quick Instagram before digging in. We've collected a few of our favorite shots here.</p>
-
-<h2>Our Baked Goods</h2>
-<p><a href="bread.html"><img src="thumbnails/bread-200.jpg" alt="close-up of sliced rustic bread" width="200" height="200"></a><br>
-We start our day at the crack of dawn to bake our own muffins, bread, and dinner rolls. Loaves not used that day are donated to the local food shelter. </p>
-
-<h2>Our Burgers</h2>
-<p><a href="burgers.html"><img src="thumbnails/burgers-200.jpg" alt="juicy burgers on a cutting board" width="200" height="200"></a><br>
-People come from all over to enjoy our lovingly made burgers. We grind our own locally-sourced organic beef and turkey so you know it's fresh and free from fillers and other nonsense. Go for one of our creative topping combos or stick with the classics. </p>
-
-<h2>Catch of the Day</h2>
-<p><a href="fish.html"><img src="thumbnails/fish-200.jpg" alt="baked fish with potatoes and cherry tomatoes" width="200" height="200"></a><br>
-Our chef works with local fisherman to pick the freshest the sea has to offer for our daily seafood special. Our Roast Cod Caponata with Roasted Potatoes is an old favorite with our regulars.</p>
-
-<div class="footer">
-    <div class="footer-text"><a href="index.html">Main Page</a></div>
-</div>
-
+    <div class="main">
+        <div class="header">
+            <img src="blackgoose.png" alt="Black Goose Bistro Logo" class="logo">
+            <h1 class="title">Black Goose Bistro</h1>
+        </div>
+        <div class="content">
+            <h2>The Restaurant</h2>
+            <p>The Black Goose Bistro offers casual lunch and dinner fare in a relaxed atmosphere. The menu changes regularly to highlight the freshest local ingredients.</p>
+            <h2>Catering</h2>
+            <p>You have fun. <em>We'll handle the cooking.</em> Black Goose Catering can handle events from snacks for a meetup to elegant corporate fundraisers.</p>
+            <h2>Location and Hours</h2>
+            <p>
+                Seekonk, Massachusetts;<br>
+                Monday through Thursday 11am to 9pm;<br>
+                Friday and Saturday, 11am to midnight
+            </p>
+            <div class="links">
+                <a href="../jenskitchen/index.html">Learn More About the Chef</a>
+                <a href="contact.html">Contact</a>
+                <a href="gallery/index.html">Gallery</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
