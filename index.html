@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhen Yang - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: linear-gradient(45deg, #ff00cc, #00ffff, #ffff00, #ff00cc);
+            background-size: 400% 400%;
+            animation: rainbow-bg 15s ease infinite;
+        }
+        
+        @keyframes rainbow-bg {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .header-bg {
+            background: linear-gradient(135deg, 
+                #ff0080 0%, 
+                #00ffff 30%, 
+                #ffff00 60%, 
+                #8000ff 100%);
+            box-shadow: 0 0 60px rgba(255, 0, 255, 0.8);
+        }
+        
+        .name-font {
+            font-family: 'Playfair Display', serif;
+            text-shadow: 
+                0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 30px #ff00ff,
+                0 0 40px #00ffff;
+        }
+        
+        .content-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+        }
+        
+        .section-title {
+            background: linear-gradient(to right, #ff00ff, #00ffff, #ffff00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
+        
+        .skill-tag {
+            background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00);
+            background-size: 200% 200%;
+            animation: skill-shimmer 3s linear infinite;
+            transition: all 0.4s ease;
+        }
+        
+        @keyframes skill-shimmer {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .decor-line {
+            height: 4px;
+            background: linear-gradient(to right, #ffff00, #00ffff, #ff00ff, #ffff00);
+        }
+        
+        .star {
+            position: absolute;
+            color: #fff;
+            text-shadow: 0 0 10px #ffff00;
+            animation: twinkle 1.5s infinite alternate;
+        }
+    </style>
+</head>
+<body class="min-h-screen pb-12 relative overflow-hidden">
+    <!-- Floating decorative elements -->
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="star text-4xl top-10 left-10">✨</div>
+        <div class="star text-5xl top-32 right-20 animation-delay-500">🌟</div>
+        <div class="star text-3xl bottom-40 left-1/3 animation-delay-1000">💎</div>
+        <div class="star text-6xl top-1/2 right-1/4 animation-delay-700">🎨</div>
+    </div>
+
+    <div class="max-w-4xl mx-auto bg-white/90 shadow-2xl overflow-hidden mt-8 content-card border-4 border-white rounded-3xl">
+        
+        <div class="header-bg text-white p-12 relative overflow-hidden rounded-t-3xl">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.4),transparent)]"></div>
+            <div class="flex justify-between items-start relative z-10">
+                <div>
+                    <h1 class="name-font text-7xl font-bold tracking-tighter">ZHEN YANG</h1>
+                    <p class="text-2xl mt-3 tracking-widest">CREATIVE VISIONARY • DIGITAL ARTIST • STORYTELLER</p>
+                </div>
+                <div class="text-right space-y-2 text-sm font-medium">
+                    <p><i class="fas fa-envelope mr-2"></i> zhen.yang@creative.art</p>
+                    <p><i class="fas fa-phone mr-2"></i> (407) 555-0189</p>
+                    <p><i class="fas fa-map-marker-alt mr-2"></i> Rich City, Money State, Happy Land</p>
+                    <p><i class="fas fa-globe mr-2"></i> zhenyang.design</p>
+                </div>
+            </div>
+            
+            <div class="decor-line mt-10 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-12">
+            
+            <div class="col-span-5 p-10 border-r border-pink-200">
+              
+                <div class="mb-12">
+                    <h2 class="section-title text-3xl mb-6">PROFESSIONAL SUMMARY</h2>
+                    <p class="text-slate-700 leading-relaxed text-lg">
+                        Passionate multidisciplinary designer blending traditional watercolor and sketching techniques with cutting-edge digital tools. 
+                        Gold medal winner at the Rich City International Design Competition. Expert in creating vibrant, emotional visual stories.
+                    </p>
+                </div>
+
+                
+                <div class="mb-12">
+                    <h2 class="section-title text-3xl mb-6">SKILLS</h2>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="skill-tag inline-flex items-center px-6 py-3 rounded-3xl text-white font-bold shadow-xl">Photoshop</span>
+                        <span class="skill-tag inline-flex items-center px-6 py-3 rounded-3xl text-white font-bold shadow-xl">HTML &amp; CSS</span>
+                        <span class="skill-tag inline-flex items-center px-6 py-3 rounded-3xl text-white font-bold shadow-xl">Illustrator</span>
+                        <span class="skill-tag inline-flex items-center px-6 py-3 rounded-3xl text-white font-bold shadow-xl">Watercolor Painting</span>
+                        <span class="skill-tag inline-flex items-center px-6 py-3 rounded-3xl text-white font-bold shadow-xl">Sketching</span>
+                        <span class="skill-tag inline-flex items-center px-6 py-3 rounded-3xl text-white font-bold shadow-xl">UI/UX Design</span>
+                        <span class="skill-tag inline-flex items-center px-6 py-3 rounded-3xl text-white font-bold shadow-xl">Branding</span>
+                        <span class="skill-tag inline-flex items-center px-6 py-3 rounded-3xl text-white font-bold shadow-xl">Mixed Media</span>
+                    </div>
+                </div>
+
+              
+                <div>
+                    <h2 class="section-title text-3xl mb-6">EDUCATION</h2>
+                    <div class="bg-white rounded-3xl p-6 shadow-inner border border-purple-200">
+                        <h3 class="font-bold text-xl">Seminole State College</h3>
+                        <p class="text-pink-600">Fine Arts &amp; Digital Design</p>
+                        <p class="text-sm text-slate-500 mt-4">2024 – Present • GPA 3.8</p>
+                        <p class="mt-3 text-slate-600">Focused on digital illustration, web design, and traditional art techniques.</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-span-7 p-10 space-y-12">
+                
+                <div>
+                    <h2 class="section-title text-3xl mb-6">AWARDS &amp; HONORS</h2>
+                    <div class="flex gap-6 bg-gradient-to-br from-yellow-100 to-pink-100 p-8 rounded-3xl">
+                        <div class="text-7xl">🏆</div>
+                        <div>
+                            <h3 class="font-bold text-2xl">Gold Medal Winner</h3>
+                            <p class="text-purple-600">Rich City International Design Competition</p>
+                            <p class="text-sm text-slate-500">Happy Land • 2025</p>
+                            <p class="mt-4">"Dream City" – A breathtaking fusion of watercolor and digital art celebrating harmony between nature and urban life.</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div>
+                    <h2 class="section-title text-3xl mb-6">EXPERIENCE</h2>
+                    
+                    <div class="mb-10">
+                        <div class="flex justify-between">
+                            <h3 class="font-bold text-xl">Freelance Creative Director</h3>
+                            <span class="text-slate-500">2025 – Present</span>
+                        </div>
+                        <ul class="mt-4 space-y-3 text-slate-700">
+                            <li class="flex items-start gap-3"><span class="text-2xl">🌈</span> Designed vibrant brand identities for 25+ startups</li>
+                            <li class="flex items-start gap-3"><span class="text-2xl">💻</span> Built stunning responsive websites using HTML &amp; CSS</li>
+                            <li class="flex items-start gap-3"><span class="text-2xl">🎨</span> Created award-winning watercolor &amp; digital illustrations</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between">
+                            <h3 class="font-bold text-xl">Campus Art Society Lead Illustrator</h3>
+                            <span class="text-slate-500">2024 – 2025</span>
+                        </div>
+                        <p class="mt-3 text-slate-600">Led visual campaigns, designed event posters, and taught watercolor &amp; sketching workshops.</p>
+                    </div>
+                </div>
+
+                
+                <div class="pt-8 border-t-4 border-dashed border-purple-300">
+                    <h2 class="section-title text-3xl mb-6">CREATIVE PASSIONS</h2>
+                    <div class="grid grid-cols-2 gap-4 text-lg font-medium">
+                        <div class="flex items-center gap-3">🌊 Watercolor Plein Air Painting</div>
+                        <div class="flex items-center gap-3">✨ Digital Art Experiments</div>
+                        <div class="flex items-center gap-3">📖 Visual Storytelling</div>
+                        <div class="flex items-center gap-3">🌟 Mixed Media Magic</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="bg-gradient-to-r from-purple-900 via-pink-600 to-cyan-600 text-white py-8 text-center font-bold tracking-[4px] text-sm rounded-b-3xl">
+            LET'S CREATE SOMETHING MAGICAL TOGETHER • 2026
+        </div>
+    </div>
+
+    <script>
+        // Simple sparkle animation helper
+        setInterval(() => {
+            const stars = document.querySelectorAll('.star');
+            stars.forEach(star => {
+                star.style.opacity = Math.random() * 0.6 + 0.4;
+            });
+        }, 800);
+    </script>
+</body>
+</html>
