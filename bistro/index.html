@@ -45,7 +45,6 @@
     h2 {
         font-size: 1.8rem;
         margin: 35px 0 12px 0;
-        color: white;
     }
     p {
         font-size: 1.1rem;
@@ -65,8 +64,34 @@
         text-decoration: underline;
         font-weight: 500;
     }
-    .links a:hover {
-        opacity: 0.8;
+
+    /* Order Pizza 按钮 - 居中显示 */
+    .order-pizza {
+        display: block;
+        margin: 60px auto;
+        text-align: center;
+    }
+    .order-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        background: rgba(255, 255, 255, 0.95);
+        color: #333;
+        padding: 16px 36px;
+        border-radius: 50px;
+        font-size: 1.45rem;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        transition: all 0.3s ease;
+    }
+    .order-btn:hover {
+        transform: translateY(-5px) scale(1.03);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    }
+    .order-btn img {
+        width: 52px;
+        height: 52px;
     }
 
     footer {
@@ -97,25 +122,37 @@
             <img src="blackgoose.png" alt="Black Goose Bistro Logo" class="logo">
             <h1 class="title">Black Goose Bistro</h1>
         </div>
+        
         <div class="content">
             <h2>The Restaurant</h2>
             <p>The Black Goose Bistro offers casual lunch and dinner fare in a relaxed atmosphere. The menu changes regularly to highlight the freshest local ingredients.</p>
+            
             <h2>Catering</h2>
             <p>You have fun. <em>We'll handle the cooking.</em> Black Goose Catering can handle events from snacks for a meetup to elegant corporate fundraisers.</p>
+            
             <h2>Location and Hours</h2>
             <p>
                 Seekonk, Massachusetts;<br>
                 Monday through Thursday 11am to 9pm;<br>
                 Friday and Saturday, 11am to midnight
             </p>
+            
             <div class="links">
                 <a href="../jenskitchen/index.html">Learn More About the Chef</a>
                 <a href="contact.html">Contact</a>
                 <a href="gallery/index.html">Gallery</a>
             </div>
         </div>
+
+        <!-- 居中的 Order Pizza 按钮 -->
+        <a href="pizza.html" class="order-pizza">
+            <div class="order-btn">
+                <img src="Order now.gif" alt="Order Pizza">
+                Order Pizza
+            </div>
+        </a>
     </div>
-<a href="pizza.html"><img src="Order now.gif" alt="order now"></a>
+
     <footer>
         <p>Please visit our social media pages</p>
         <p>
@@ -124,6 +161,5 @@
             <img src="icons/instagram.svg" alt="instagram">
         </p>
     </footer>
-
 </body>
 </html>
