@@ -65,33 +65,17 @@
         font-weight: 500;
     }
 
-    /* Order Pizza 按钮 - 居中显示 */
-    .order-pizza {
+    /* 只居中 Order now.gif */
+    .order-center {
         display: block;
         margin: 60px auto;
         text-align: center;
     }
-    .order-btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 12px;
-        background: rgba(255, 255, 255, 0.95);
-        color: #333;
-        padding: 16px 36px;
-        border-radius: 50px;
-        font-size: 1.45rem;
-        font-weight: 600;
-        text-decoration: none;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-        transition: all 0.3s ease;
-    }
-    .order-btn:hover {
-        transform: translateY(-5px) scale(1.03);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-    }
-    .order-btn img {
-        width: 52px;
-        height: 52px;
+    .order-center img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px; /* 可选圆角，根据原图风格 */
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     }
 
     footer {
@@ -144,11 +128,9 @@
             </div>
         </div>
 
-        <a href="pizza.html" class="order-pizza">
-            <div class="order-btn">
-                <img src="Order now.gif" alt="Order Pizza">
-                Order Pizza
-            </div>
+        <!-- 只居中的 Order now.gif -->
+        <a href="pizza.html" class="order-center">
+            <img src="Order now.gif" alt="Order Pizza">
         </a>
     </div>
 
