@@ -7,43 +7,46 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap');
-        
         body {
-            font-family: 'Inter', system-ui, sans-serif;
-            background: #f8f1e9;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             margin: 0;
             padding: 0;
+            background: linear-gradient(135deg, #1a0f2e 0%, #2c1a3d 30%, #4a2c1a 60%, #3d2a1f 100%);
         }
         
         .header-bg {
-            background: #2c1810;
+            background: linear-gradient(90deg, #6b46c1, #d97706, #b91c1c, #15803d);
         }
         
         .name-font {
-            font-family: 'Playfair Display', serif;
+            font-family: Georgia, 'Times New Roman', serif;
         }
         
-        .section-title {
-            color: #2c1810;
-            border-bottom: 3px solid #9c6644;
+        .accent-gold {
+            color: #fcd34d;
         }
         
         .left-column {
-            background: #f8f1e9;
+            background: linear-gradient(to bottom, #2c1a3d, #1a0f2e);
+        }
+        
+        .section-title {
+            background: linear-gradient(to right, #fcd34d, #f472b6, #60a5fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     </style>
 </head>
 <body>
     <!-- Header -->
-    <div class="header-bg text-[#f8f1e9] px-16 py-16">
+    <div class="header-bg text-white px-16 py-16">
         <div class="max-w-5xl mx-auto">
             <div class="flex justify-between items-start">
                 <div>
-                    <h1 class="name-font text-7xl font-bold tracking-tight">ZHEN YANG</h1>
-                    <p class="text-2xl mt-4 text-[#d4b8a0]">Creative Designer &amp; Visual Artist</p>
+                    <h1 class="name-font text-7xl font-bold tracking-tighter">ZHEN YANG</h1>
+                    <p class="text-2xl mt-4">Creative Designer &amp; Visual Artist</p>
                 </div>
-                <div class="text-right text-base space-y-2 pt-2">
+                <div class="text-right text-base space-y-2 pt-3">
                     <p><i class="fas fa-envelope mr-3"></i> zhen.yang@creative.art</p>
                     <p><i class="fas fa-phone mr-3"></i> (407) 555-0189</p>
                     <p><i class="fas fa-map-marker-alt mr-3"></i> Rich City, Money State, Happy Land</p>
@@ -55,38 +58,38 @@
 
     <div class="max-w-5xl mx-auto grid grid-cols-12">
         <!-- Left Column -->
-        <div class="left-column col-span-5 p-16">
+        <div class="left-column col-span-5 p-16 text-[#e2d5f0]">
             <!-- Summary -->
             <div class="mb-12">
-                <h2 class="section-title text-2xl font-semibold pb-3 mb-6">PROFESSIONAL SUMMARY</h2>
-                <p class="text-[#3f2a1e] leading-relaxed text-[17px]">
-                    Passionate designer specializing in blending traditional watercolor and sketching techniques 
-                    with modern digital tools. Gold medal winner at the Rich City International Design Competition.
+                <h2 class="section-title text-3xl font-semibold pb-3 mb-6">PROFESSIONAL SUMMARY</h2>
+                <p class="leading-relaxed text-[17px]">
+                    Passionate multidisciplinary designer who blends traditional watercolor and sketching with digital artistry. 
+                    Gold medal winner at the Rich City International Design Competition.
                 </p>
             </div>
 
             <!-- Skills -->
             <div class="mb-12">
-                <h2 class="section-title text-2xl font-semibold pb-3 mb-6">SKILLS</h2>
+                <h2 class="section-title text-3xl font-semibold pb-3 mb-6">SKILLS</h2>
                 <div class="flex flex-wrap gap-3">
-                    <span class="inline-block bg-white px-6 py-3 border border-[#d4b8a0] text-[#2c1810] rounded-full text-sm">Photoshop</span>
-                    <span class="inline-block bg-white px-6 py-3 border border-[#d4b8a0] text-[#2c1810] rounded-full text-sm">HTML &amp; CSS</span>
-                    <span class="inline-block bg-white px-6 py-3 border border-[#d4b8a0] text-[#2c1810] rounded-full text-sm">Illustrator</span>
-                    <span class="inline-block bg-white px-6 py-3 border border-[#d4b8a0] text-[#2c1810] rounded-full text-sm">Watercolor Painting</span>
-                    <span class="inline-block bg-white px-6 py-3 border border-[#d4b8a0] text-[#2c1810] rounded-full text-sm">Sketching</span>
-                    <span class="inline-block bg-white px-6 py-3 border border-[#d4b8a0] text-[#2c1810] rounded-full text-sm">UI/UX Design</span>
-                    <span class="inline-block bg-white px-6 py-3 border border-[#d4b8a0] text-[#2c1810] rounded-full text-sm">Branding</span>
+                    <span class="inline-block bg-white/10 backdrop-blur-md px-6 py-3 border border-white/30 rounded-3xl text-sm">Photoshop</span>
+                    <span class="inline-block bg-white/10 backdrop-blur-md px-6 py-3 border border-white/30 rounded-3xl text-sm">HTML &amp; CSS</span>
+                    <span class="inline-block bg-white/10 backdrop-blur-md px-6 py-3 border border-white/30 rounded-3xl text-sm">Illustrator</span>
+                    <span class="inline-block bg-white/10 backdrop-blur-md px-6 py-3 border border-white/30 rounded-3xl text-sm">Watercolor</span>
+                    <span class="inline-block bg-white/10 backdrop-blur-md px-6 py-3 border border-white/30 rounded-3xl text-sm">Sketching</span>
+                    <span class="inline-block bg-white/10 backdrop-blur-md px-6 py-3 border border-white/30 rounded-3xl text-sm">UI/UX Design</span>
+                    <span class="inline-block bg-white/10 backdrop-blur-md px-6 py-3 border border-white/30 rounded-3xl text-sm">Branding</span>
                 </div>
             </div>
 
             <!-- Education -->
             <div>
-                <h2 class="section-title text-2xl font-semibold pb-3 mb-6">EDUCATION</h2>
-                <div class="space-y-1">
+                <h2 class="section-title text-3xl font-semibold pb-3 mb-6">EDUCATION</h2>
+                <div>
                     <h3 class="font-semibold text-xl">Seminole State College</h3>
-                    <p class="text-[#9c6644]">Fine Arts &amp; Digital Design</p>
-                    <p class="text-sm text-[#6b5c4d]">2024 – Present • GPA 3.8</p>
-                    <p class="mt-6 text-[#3f2a1e] text-[15px]">
+                    <p class="accent-gold">Fine Arts &amp; Digital Design</p>
+                    <p class="text-sm opacity-75 mt-1">2024 – Present • GPA 3.8</p>
+                    <p class="mt-6 text-[15px]">
                         Focused on digital illustration, web design, and traditional art techniques.
                     </p>
                 </div>
@@ -94,17 +97,17 @@
         </div>
 
         <!-- Right Column -->
-        <div class="col-span-7 p-16 bg-white">
+        <div class="col-span-7 p-16 bg-[#f8f1e3] text-[#2c1810]">
             <!-- Awards -->
             <div class="mb-12">
-                <h2 class="section-title text-2xl font-semibold pb-3 mb-6">AWARDS</h2>
+                <h2 class="section-title text-3xl font-semibold pb-3 mb-6">AWARDS</h2>
                 <div class="flex gap-8">
-                    <div class="text-6xl text-[#9c6644] flex-shrink-0">🏆</div>
+                    <div class="text-7xl">🏆</div>
                     <div>
-                        <h3 class="font-semibold text-xl">Gold Medal Winner</h3>
-                        <p class="text-[#9c6644]">Rich City International Design Competition • Happy Land, 2025</p>
-                        <p class="mt-4 text-[#3f2a1e]">
-                            "Dream City" — A fusion of watercolor and digital art celebrating harmony between nature and urban life.
+                        <h3 class="font-semibold text-2xl">Gold Medal Winner</h3>
+                        <p class="text-[#b45309]">Rich City International Design Competition • Happy Land, 2025</p>
+                        <p class="mt-4">
+                            "Dream City" — A stunning fusion of watercolor and digital art.
                         </p>
                     </div>
                 </div>
@@ -112,35 +115,35 @@
 
             <!-- Experience -->
             <div class="mb-12">
-                <h2 class="section-title text-2xl font-semibold pb-3 mb-6">EXPERIENCE</h2>
+                <h2 class="section-title text-3xl font-semibold pb-3 mb-6">EXPERIENCE</h2>
                 
                 <div class="mb-10">
                     <div class="flex justify-between">
                         <h3 class="font-semibold text-xl">Freelance Creative Director</h3>
-                        <span class="text-[#6b5c4d]">2025 – Present</span>
+                        <span class="text-[#854d0e]">2025 – Present</span>
                     </div>
-                    <ul class="mt-4 space-y-3 text-[#3f2a1e]">
-                        <li class="flex items-start gap-3">• Designed brand identities and complete visual systems</li>
-                        <li class="flex items-start gap-3">• Built responsive websites using HTML &amp; CSS</li>
-                        <li class="flex items-start gap-3">• Created award-winning watercolor and digital illustrations</li>
+                    <ul class="mt-4 space-y-3">
+                        <li>• Designed vibrant brand identities and visual systems</li>
+                        <li>• Built beautiful responsive websites with HTML &amp; CSS</li>
+                        <li>• Created award-winning watercolor &amp; digital illustrations</li>
                     </ul>
                 </div>
 
                 <div>
                     <div class="flex justify-between">
                         <h3 class="font-semibold text-xl">Campus Art Society Lead Illustrator</h3>
-                        <span class="text-[#6b5c4d]">2024 – 2025</span>
+                        <span class="text-[#854d0e]">2024 – 2025</span>
                     </div>
-                    <p class="mt-4 text-[#3f2a1e]">
-                        Designed promotional materials and led watercolor &amp; sketching workshops.
+                    <p class="mt-4">
+                        Designed promotional materials and taught watercolor &amp; sketching workshops.
                     </p>
                 </div>
             </div>
 
             <!-- Interests -->
             <div>
-                <h2 class="section-title text-2xl font-semibold pb-3 mb-6">INTERESTS</h2>
-                <div class="flex flex-wrap gap-x-10 gap-y-3 text-[#3f2a1e]">
+                <h2 class="section-title text-3xl font-semibold pb-3 mb-6">CREATIVE INTERESTS</h2>
+                <div class="flex flex-wrap gap-x-12 gap-y-4 text-lg">
                     <div>Watercolor Painting</div>
                     <div>Digital Illustration</div>
                     <div>Visual Storytelling</div>
@@ -151,8 +154,8 @@
     </div>
 
     <!-- Footer -->
-    <div class="bg-[#2c1810] text-[#d4b8a0] text-center py-8 text-sm mt-16">
-        2026 • Open to Creative Opportunities
+    <div class="bg-gradient-to-r from-[#1a0f2e] via-[#4a2c1a] to-[#2c1a3d] text-[#e2d5f0] text-center py-8 text-sm">
+        2026 • Open to Exciting Creative Collaborations
     </div>
 </body>
 </html>
