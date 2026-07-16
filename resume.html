@@ -13,26 +13,34 @@
             padding: 0;
             background: #f0f4f0;
         }
-        
+       
         .header-bg {
             background: #1e3a8a; /* Deep Blue */
         }
-        
+       
         .left-column {
             background: #14532d; /* Deep Green */
             color: #f0fdf4;
         }
-        
+       
         .name-font {
             font-family: Georgia, 'Times New Roman', serif;
         }
-        
+       
         .section-title {
             color: #b91c1c; /* Red */
         }
-        
+       
         .accent-red {
             color: #b91c1c;
+        }
+
+        /* 新增：作品样本样式 */
+        .work-samples img {
+            transition: transform 0.3s ease;
+        }
+        .work-samples img:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -62,11 +70,10 @@
             <div class="mb-12">
                 <h2 class="section-title text-3xl font-semibold pb-3 mb-6">PROFESSIONAL SUMMARY</h2>
                 <p class="leading-relaxed text-[17px]">
-                    Passionate multidisciplinary designer who blends traditional watercolor and sketching with digital artistry. 
+                    Passionate multidisciplinary designer who blends traditional watercolor and sketching with digital artistry.
                     Gold medal winner at the Rich City International Design Competition.
                 </p>
             </div>
-
             <!-- Skills -->
             <div class="mb-12">
                 <h2 class="section-title text-3xl font-semibold pb-3 mb-6">SKILLS</h2>
@@ -80,7 +87,6 @@
                     <span class="inline-block bg-white/20 px-6 py-3 border border-white/40 rounded-3xl text-sm">Branding</span>
                 </div>
             </div>
-
             <!-- Education -->
             <div>
                 <h2 class="section-title text-3xl font-semibold pb-3 mb-6">EDUCATION</h2>
@@ -115,7 +121,7 @@
             <!-- Experience -->
             <div class="mb-12">
                 <h2 class="section-title text-3xl font-semibold pb-3 mb-6">EXPERIENCE</h2>
-                
+               
                 <div class="mb-10">
                     <div class="flex justify-between">
                         <h3 class="font-semibold text-xl">Freelance Creative Director</h3>
@@ -127,7 +133,6 @@
                         <li>• Created award-winning watercolor &amp; digital illustrations</li>
                     </ul>
                 </div>
-
                 <div>
                     <div class="flex justify-between">
                         <h3 class="font-semibold text-xl">Rich City Art Society Lead Illustrator</h3>
@@ -137,6 +142,24 @@
                         Designed promotional materials and taught watercolor &amp; sketching workshops.
                     </p>
                 </div>
+            </div>
+
+            <!-- Work Samples（已插入） -->
+            <div class="mb-12">
+                <h2 class="section-title text-3xl font-semibold pb-3 mb-6">WORK SAMPLES</h2>
+                <article class="work">
+                    <section id="samples" class="work-samples grid grid-cols-3 gap-6">
+                        <a href="cool.html" class="block">
+                            <img src="images/light.svg" alt="light" class="w-full rounded-lg shadow-md">
+                        </a>
+                        <a href="cube.html" class="block">
+                            <img src="images/ice.svg" alt="ice" class="w-full rounded-lg shadow-md">
+                        </a>
+                        <a href="pie.html" class="block">
+                            <img src="images/cake.svg" alt="pie" class="w-full rounded-lg shadow-md">
+                        </a>
+                    </section>
+                </article>
             </div>
 
             <!-- Interests -->
