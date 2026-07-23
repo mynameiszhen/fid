@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="460" viewBox="0 0 520 460" fill="none">
+
+  <!-- 浅色背景 -->
+  <rect width="520" height="460" fill="#FFF8E1"/>
+
+  <!-- 煎饼盘子 -->
+  <circle cx="260" cy="290" r="195" fill="#FAF0D8" stroke="#E6B87D" stroke-width="25"/>
+
+  <!-- 主煎饼 -->
+  <!-- 底层阴影 -->
+  <ellipse cx="260" cy="295" rx="145" ry="52" fill="#E8B46B" opacity="0.4"/>
+  
+  <!-- 煎饼主体 -->
+  <ellipse cx="260" cy="270" rx="145" ry="125" fill="#F4C37E" stroke="#D98E2F" stroke-width="18"/>
+  
+  <!-- 煎饼上层 -->
+  <ellipse cx="260" cy="258" rx="138" ry="115" fill="#FFCB7F" stroke="#E6A14A" stroke-width="10"/>
+
+  <!-- 煎饼纹理气泡 -->
+  <circle cx="180" cy="220" r="12" fill="#FFE8B3" opacity="0.7"/>
+  <circle cx="340" cy="235" r="15" fill="#FFE8B3" opacity="0.65"/>
+  <circle cx="210" cy="300" r="9" fill="#FFE8B3" opacity="0.8"/>
+  <circle cx="305" cy="320" r="11" fill="#FFE8B3" opacity="0.7"/>
+  <circle cx="380" cy="265" r="8" fill="#FFE8B3" opacity="0.6"/>
+  
+  <circle cx="195" cy="255" r="6" fill="#E8A55F" opacity="0.5"/>
+  <circle cx="315" cy="215" r="7" fill="#E8A55F" opacity="0.45"/>
+  <circle cx="245" cy="345" r="10" fill="#E8A55F" opacity="0.4"/>
+
+  <!-- 笑脸 -->
+  <!-- 脸部 -->
+  <circle cx="260" cy="255" r="68" fill="#FFEB3B" stroke="#263238" stroke-width="8"/>
+  
+  <!-- 眼睛 -->
+  <circle cx="228" cy="235" r="9" fill="#263238"/>
+  <circle cx="292" cy="235" r="9" fill="#263238"/>
+  
+  <!-- 开心微笑嘴巴 -->
+  <path d="M225 280 Q260 315 295 280" fill="none" stroke="#263238" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- 腮红 -->
+  <ellipse cx="205" cy="265" rx="12" ry="7" fill="#FF8A80" opacity="0.6"/>
+  <ellipse cx="315" cy="265" rx="12" ry="7" fill="#FF8A80" opacity="0.6"/>
+
+  <!-- 枫糖浆 -->
+  <path d="M190 185 Q200 165 225 170" fill="none" stroke="#FFB300" stroke-width="14" stroke-linecap="round" opacity="0.85"/>
+  <path d="M310 180 Q335 160 355 175" fill="none" stroke="#FFB300" stroke-width="11" stroke-linecap="round" opacity="0.8"/>
+  <path d="M255 325 Q250 355 245 370" fill="none" stroke="#FFB300" stroke-width="9" stroke-linecap="round" opacity="0.75"/>
+
+</svg>
