@@ -1,147 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Black Goose Bistro</title>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    body {
-        font-family: 'Segoe UI', system-ui, sans-serif;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
-        min-height: 100vh;
-        padding: 40px 20px;
-    }
-    .main {
-        max-width: 900px;
-        margin: 0 auto;
-    }
-    .header {
-        display: flex;
-        align-items: center;
-        gap: 25px;
-        margin-bottom: 60px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .logo {
-        width: 180px;
-        height: 180px;
-        flex-shrink: 0;
-    }
-    .title {
-        font-size: 3.2rem;
-        font-weight: 700;
-        text-align: center;
-    }
-    .content {
-        max-width: 700px;
-        margin: 0 auto;
-    }
-    h2 {
-        font-size: 1.8rem;
-        margin: 35px 0 12px 0;
-    }
-    p {
-        font-size: 1.1rem;
-        line-height: 1.6;
-        margin-bottom: 8px;
-        opacity: 0.95;
-    }
-    .links {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-    }
-    .links a {
-        color: #fff7b3;
-        font-size: 1.35rem;
-        text-decoration: underline;
-        font-weight: 500;
-    }
-
-    /* 只居中 Order now.gif */
-    .order-center {
-        display: block;
-        margin: 60px auto;
-        text-align: center;
-    }
-    .order-center img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 12px; /* 可选圆角，根据原图风格 */
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    }
-
-    footer {
-        margin-top: 80px;
-        padding-top: 30px;
-        border-top: 1px solid rgba(255,255,255,0.3);
-        text-align: center;
-    }
-    footer p:first-child {
-        margin-bottom: 15px;
-        opacity: 0.9;
-        font-size: 1.1rem;
-    }
-    footer img {
-        width: 45px;
-        height: 45px;
-        margin: 0 12px;
-        transition: transform 0.3s;
-    }
-    footer img:hover {
-        transform: scale(1.15);
-    }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Goose Bistro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="main">
-        <div class="header">
-            <img src="blackgoose.png" alt="Black Goose Bistro Logo" class="logo">
-            <h1 class="title">Black Goose Bistro</h1>
-        </div>
-        
-        <div class="content">
-            <h2>The Restaurant</h2>
-            <p>The Black Goose Bistro offers casual lunch and dinner fare in a relaxed atmosphere. The menu changes regularly to highlight the freshest local ingredients.</p>
-            
-            <h2>Catering</h2>
-            <p>You have fun. <em>We'll handle the cooking.</em> Black Goose Catering can handle events from snacks for a meetup to elegant corporate fundraisers.</p>
-            
-            <h2>Location and Hours</h2>
-            <p>
-                Seekonk, Massachusetts;<br>
-                Monday through Thursday 11am to 9pm;<br>
-                Friday and Saturday, 11am to midnight
-            </p>
-            
-            <div class="links">
-                <a href="../jenskitchen/index.html">Learn More About the Chef</a>
-                <a href="contact.html">Contact</a>
-                <a href="gallery/index.html">Gallery</a>
-                <a href="news.html">News</a>
-            </div>
-        </div>
-
-        <!-- 只居中的 Order now.gif -->
-        <a href="pizza.html" class="order-center">
-            <img src="Order now.gif" alt="Order Pizza">
-        </a>
+  <div class="main">
+    <div class="header">
+      <img src="blackgoose.png" alt="Black Goose Bistro Logo" class="logo">
+      <h1 class="title">Black Goose Bistro</h1>
+    </div>
+    
+    <div class="content">
+      <h2>The Restaurant</h2>
+      <p>The Black Goose Bistro offers casual lunch and dinner fare in a relaxed atmosphere. The menu changes regularly to highlight the freshest local ingredients.</p>
+      
+      <h2>Catering</h2>
+      <p>You have fun. <em>We'll handle the cooking.</em> Black Goose Catering can handle events from snacks for a meetup to elegant corporate fundraisers.</p>
+      
+      <h2>Location and Hours</h2>
+      <p>
+        Seekonk, Massachusetts;<br>
+        Monday through Thursday 11am to 9pm;<br>
+        Friday and Saturday, 11am to midnight
+      </p>
+      
+      <div class="links">
+        <a href="../jenskitchen/index.html">Learn More About the Chef</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery/index.html">Gallery</a>
+        <a href="news.html">News</a>
+      </div>
     </div>
 
-    <footer>
-        <p>Please visit our social media pages</p>
-        <p>
-            <img src="icons/twitter.svg" alt="twitter">
-            <img src="icons/facebook.svg" alt="facebook">
-            <img src="icons/instagram.svg" alt="instagram">
-        </p>
-    </footer>
+    <!-- 只居中的 Order now.gif -->
+    <a href="pizza.html" class="order-center">
+      <img src="Order now.gif" alt="Order Pizza">
+    </a>
+  </div>
+
+  <footer>
+    <p>Please visit our social media pages</p>
+    <p>
+      <img src="icons/twitter.svg" alt="twitter">
+      <img src="icons/facebook.svg" alt="facebook">
+      <img src="icons/instagram.svg" alt="instagram">
+    </p>
+  </footer>
 </body>
 </html>
