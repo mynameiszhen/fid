@@ -1,166 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', system-ui, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            min-height: 100vh;
-            padding: 40px 20px;
-        }
-        
-        .main {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-        
-        header h1 {
-            font-size: 3.2rem;
-            font-weight: 700;
-            margin-bottom: 12px;
-        }
-        
-        header p {
-            font-size: 1.35rem;
-            opacity: 0.9;
-        }
-        
-        .section-title {
-            text-align: center;
-            font-size: 2.1rem;
-            margin-bottom: 50px;
-            color: white;
-        }
-        
-        .info-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-        }
-        
-        .info-item {
-            display: flex;
-            align-items: center;
-            gap: 25px;
-            padding: 28px 30px;
-            border-radius: 16px;
-        }
-        
-        .icon-circle {
-            width: 65px;
-            height: 65px;
-            background: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.9rem;
-            flex-shrink: 0;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-        
-        .info-content h3 {
-            font-size: 1.45rem;
-            margin-bottom: 6px;
-            color: #ffffff;
-        }
-        
-        .info-content p {
-            font-size: 1.15rem;
-            opacity: 1;
-            line-height: 1.5;
-            color: #ffffff;
-        }
-        
-        .info-content a {
-            color: #fff7b3;
-            text-decoration: none;
-        }
-        
-        .info-content a:hover {
-            text-decoration: underline;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 80px;
-        }
-        
-        .footer-text {
-            color: #ffffff;
-            font-size: 1.5rem;
-            font-weight: 600;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="main">
-        <header>
-            <h1>Contact Us</h1>
-            <p>Get in Touch • We're here to help</p>
-        </header>
-        
-        <h2 class="section-title">Contact Information</h2>
-        
-        <div class="info-grid">
-            <!-- Address -->
-            <div class="info-item">
-                <div class="icon-circle">📍</div>
-                <div class="info-content">
-                    <h3>Address</h3>
-                    <p>1234 Happy Way<br>
-                       Money City, Diamond Island 54321</p>
-                </div>
-            </div>
-            
-            <!-- Phone -->
-            <div class="info-item">
-                <div class="icon-circle">📞</div>
-                <div class="info-content">
-                    <h3>Phone</h3>
-                    <p><a href="tel:+11234567890">+1 1234567890</a></p>
-                </div>
-            </div>
-            
-            <!-- Email -->
-            <div class="info-item">
-                <div class="icon-circle">✉️</div>
-                <div class="info-content">
-                    <h3>Email</h3>
-                    <p><a href="mailto:idonotknow@guessmyname.com">idonotknow@guessmyname.com</a></p>
-                </div>
-            </div>
-            
-            <!-- Hours -->
-            <div class="info-item">
-                <div class="icon-circle">🕒</div>
-                <div class="info-content">
-                    <h3>Business Hours</h3>
-                    <p>
-                        Monday to Friday: 9:00 AM - 10:00 PM<br>
-                        Weekends: 9:00 AM - 11:00 PM
-                    </p>
-                </div>
-            </div>
+  <div class="main">
+    <header>
+      <h1>Contact Us</h1>
+      <p>Get in Touch • We're here to help</p>
+    </header>
+    
+    <h2 class="section-title">Contact Information</h2>
+    
+    <div class="info-grid">
+      <!-- Address -->
+      <div class="info-item">
+        <div class="icon-circle">📍</div>
+        <div class="info-content">
+          <h3>Address</h3>
+          <p>1234 Happy Way<br>
+             Money City, Diamond Island 54321</p>
         </div>
-        <div class="footer">
-            <div class="footer-text"><a href="index.html">Main Page</a></div>
+      </div>
+      
+      <!-- Phone -->
+      <div class="info-item">
+        <div class="icon-circle">📞</div>
+        <div class="info-content">
+          <h3>Phone</h3>
+          <p><a href="tel:+11234567890">+1 1234567890</a></p>
         </div>
+      </div>
+      
+      <!-- Email -->
+      <div class="info-item">
+        <div class="icon-circle">✉️</div>
+        <div class="info-content">
+          <h3>Email</h3>
+          <p><a href="mailto:idonotknow@guessmyname.com">idonotknow@guessmyname.com</a></p>
+        </div>
+      </div>
+      
+      <!-- Hours -->
+      <div class="info-item">
+        <div class="icon-circle">🕒</div>
+        <div class="info-content">
+          <h3>Business Hours</h3>
+          <p>
+            Monday to Friday: 9:00 AM - 10:00 PM<br>
+            Weekends: 9:00 AM - 11:00 PM
+          </p>
+        </div>
+      </div>
     </div>
+    <div class="footer">
+      <div class="footer-text"><a href="index.html">Main Page</a></div>
+    </div>
+  </div>
 </body>
 </html>
+
