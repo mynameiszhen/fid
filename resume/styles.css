@@ -1,17 +1,11 @@
-/* External stylesheet for Zhen Yang Resume
-   Validates with CSSLint - pure CSS, no errors
-   At least 10 rules + Google Fonts + :hover pseudo-class */
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap');
 
-/* 1. Global reset and base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* 2. Body styling */
 body {
     font-family: 'Source Sans 3', system-ui, -apple-system, sans-serif;
     background-color: #f0f4f0;
@@ -20,7 +14,6 @@ body {
     min-height: 100vh;
 }
 
-/* 3. Header background and layout */
 .header {
     background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
     color: #ffffff;
@@ -36,7 +29,6 @@ body {
     gap: 2rem;
 }
 
-/* 4. Name typography with custom Google font */
 .name {
     font-family: 'Playfair Display', Georgia, serif;
     font-size: 4.5rem;
@@ -53,7 +45,6 @@ body {
     margin-top: 0.75rem;
 }
 
-/* 5. Contact info */
 .contact-info {
     text-align: right;
     font-size: 0.95rem;
@@ -68,7 +59,6 @@ body {
     opacity: 0.9;
 }
 
-/* 6. Main two-column grid */
 .main-grid {
     max-width: 1100px;
     margin: 0 auto;
@@ -77,14 +67,12 @@ body {
     min-height: 600px;
 }
 
-/* 7. Left column (deep green) */
 .left-column {
     background: linear-gradient(180deg, #14532d 0%, #166534 100%);
     color: #f0fdf4;
     padding: 3rem 2.5rem;
 }
 
-/* 8. Section titles with accent */
 .section-title {
     font-family: 'Playfair Display', Georgia, serif;
     font-size: 1.6rem;
@@ -101,7 +89,6 @@ body {
     border-bottom-color: rgba(185, 28, 28, 0.25);
 }
 
-/* 9. Skills tags */
 .skills-list {
     display: flex;
     flex-wrap: wrap;
@@ -120,7 +107,6 @@ body {
     transition: all 0.25s ease;
 }
 
-/* 10. Pseudo-class :hover on skill tags */
 .skill-tag:hover {
     background: rgba(255, 255, 255, 0.28);
     border-color: #fca5a5;
@@ -129,14 +115,12 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* 11. Right column */
 .right-column {
     background: #ffffff;
     color: #111827;
     padding: 3rem 2.75rem;
 }
 
-/* 12. Award highlight */
 .award-block {
     display: flex;
     gap: 1.5rem;
@@ -161,7 +145,6 @@ body {
     margin-bottom: 0.6rem;
 }
 
-/* 13. Experience items */
 .job {
     margin-bottom: 1.8rem;
 }
@@ -203,7 +186,6 @@ body {
     font-weight: bold;
 }
 
-/* 14. Work samples grid + hover */
 .work-samples {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -229,12 +211,10 @@ body {
     transition: transform 0.35s ease;
 }
 
-/* 15. Additional :hover pseudo-class on images */
 .work-samples img:hover {
     transform: scale(1.08);
 }
 
-/* 16. Interests */
 .interests {
     display: flex;
     flex-wrap: wrap;
@@ -256,7 +236,6 @@ body {
     top: 0.2rem;
 }
 
-/* 17. Footer */
 .footer {
     background: #1e3a8a;
     color: #ffffff;
@@ -266,7 +245,6 @@ body {
     letter-spacing: 0.03em;
 }
 
-/* 18. Links general hover */
 a {
     color: inherit;
     text-decoration: none;
@@ -277,7 +255,6 @@ a:hover {
     color: #fca5a5;
 }
 
-/* 19. Education details */
 .edu-school {
     font-size: 1.15rem;
     font-weight: 600;
@@ -294,7 +271,6 @@ a:hover {
     margin-top: 1rem;
 }
 
-/* 20. Spacing helpers */
 .mb-section {
     margin-bottom: 2.5rem;
 }
@@ -305,7 +281,6 @@ a:hover {
     opacity: 0.95;
 }
 
-/* Responsive adjustments */
 @media (max-width: 860px) {
     .header-inner {
         flex-direction: column;
