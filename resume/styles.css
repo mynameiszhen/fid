@@ -1,0 +1,323 @@
+/* External stylesheet for Zhen Yang Resume
+   Validates with CSSLint - pure CSS, no errors
+   At least 10 rules + Google Fonts + :hover pseudo-class */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap');
+
+/* 1. Global reset and base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Body styling */
+body {
+    font-family: 'Source Sans 3', system-ui, -apple-system, sans-serif;
+    background-color: #f0f4f0;
+    color: #1a1a1a;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* 3. Header background and layout */
+.header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    color: #ffffff;
+    padding: 3.5rem 4rem;
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+/* 4. Name typography with custom Google font */
+.name {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-size: 1.35rem;
+    font-weight: 300;
+    opacity: 0.95;
+    margin-top: 0.75rem;
+}
+
+/* 5. Contact info */
+.contact-info {
+    text-align: right;
+    font-size: 0.95rem;
+    line-height: 1.9;
+    padding-top: 0.5rem;
+}
+
+.contact-info i {
+    margin-right: 0.6rem;
+    width: 1.1rem;
+    text-align: center;
+    opacity: 0.9;
+}
+
+/* 6. Main two-column grid */
+.main-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    min-height: 600px;
+}
+
+/* 7. Left column (deep green) */
+.left-column {
+    background: linear-gradient(180deg, #14532d 0%, #166534 100%);
+    color: #f0fdf4;
+    padding: 3rem 2.5rem;
+}
+
+/* 8. Section titles with accent */
+.section-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fca5a5;
+    border-bottom: 2px solid rgba(252, 165, 165, 0.4);
+    padding-bottom: 0.6rem;
+    margin-bottom: 1.4rem;
+    letter-spacing: 0.02em;
+}
+
+.right-column .section-title {
+    color: #b91c1c;
+    border-bottom-color: rgba(185, 28, 28, 0.25);
+}
+
+/* 9. Skills tags */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+
+.skill-tag {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    color: #f0fdf4;
+    padding: 0.45rem 1.1rem;
+    border-radius: 2rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+
+/* 10. Pseudo-class :hover on skill tags */
+.skill-tag:hover {
+    background: rgba(255, 255, 255, 0.28);
+    border-color: #fca5a5;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 11. Right column */
+.right-column {
+    background: #ffffff;
+    color: #111827;
+    padding: 3rem 2.75rem;
+}
+
+/* 12. Award highlight */
+.award-block {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.award-icon {
+    font-size: 3.5rem;
+    line-height: 1;
+    color: #b91c1c;
+}
+
+.award-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.award-meta {
+    color: #14532d;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+}
+
+/* 13. Experience items */
+.job {
+    margin-bottom: 1.8rem;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.job-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.job-date {
+    color: #1e40af;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.job ul {
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+.job li {
+    position: relative;
+    padding-left: 1.1rem;
+    margin-bottom: 0.4rem;
+}
+
+.job li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #b91c1c;
+    font-weight: bold;
+}
+
+/* 14. Work samples grid + hover */
+.work-samples {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.1rem;
+}
+
+.work-samples a {
+    display: block;
+    overflow: hidden;
+    border-radius: 0.6rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.work-samples a:hover {
+    box-shadow: 0 8px 24px rgba(30, 58, 138, 0.25);
+}
+
+.work-samples img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+/* 15. Additional :hover pseudo-class on images */
+.work-samples img:hover {
+    transform: scale(1.08);
+}
+
+/* 16. Interests */
+.interests {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 2.5rem;
+    font-size: 1.05rem;
+}
+
+.interest-item {
+    position: relative;
+    padding-left: 1rem;
+}
+
+.interest-item::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: #b91c1c;
+    font-size: 0.75rem;
+    top: 0.2rem;
+}
+
+/* 17. Footer */
+.footer {
+    background: #1e3a8a;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.03em;
+}
+
+/* 18. Links general hover */
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #fca5a5;
+}
+
+/* 19. Education details */
+.edu-school {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+.edu-meta {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-top: 0.3rem;
+}
+
+.edu-desc {
+    margin-top: 1rem;
+}
+
+/* 20. Spacing helpers */
+.mb-section {
+    margin-bottom: 2.5rem;
+}
+
+.summary-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    opacity: 0.95;
+}
+
+/* Responsive adjustments */
+@media (max-width: 860px) {
+    .header-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-info {
+        text-align: center;
+    }
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+    .name {
+        font-size: 3.2rem;
+    }
+}
